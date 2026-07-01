@@ -14,10 +14,7 @@ The dashboard consolidates employee information into a single interactive report
 
 ## 📷 Dashboard Preview
 
-
-<p align="center">
-<img src="dashboard.png" width="900">
-</p>
+![Dashboard](dashboard.png)
 
 ---
 
@@ -229,6 +226,10 @@ HR-Analytics-Dashboard
 - Mobile Dashboard Optimization
 
 ---
+
+## 👨‍💻 Author
+
+**Parth Sharma**
 
 Aspiring Business Analyst | Data Analyst
 
