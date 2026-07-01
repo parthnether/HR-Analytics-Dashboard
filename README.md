@@ -1,163 +1,170 @@
-HR Analytics Dashboard | Power BI
-📊 Project Overview
+# 📊 HR Analytics Dashboard
 
-The HR Analytics Dashboard is an end-to-end Business Intelligence project developed using Microsoft Power BI to analyze employee workforce data and identify the major factors contributing to employee attrition.
+An interactive **Power BI dashboard** built to analyze workforce data, employee attrition, salary trends, and HR performance metrics. This project demonstrates end-to-end Business Intelligence development, from data transformation to interactive dashboard design.
 
-The dashboard transforms raw HR data into meaningful insights through interactive visualizations, KPI cards, and dynamic filtering, enabling HR managers and business leaders to make informed workforce decisions.
+---
 
-The project covers employee demographics, attrition trends, salary analysis, job satisfaction, education background, and department-level performance to support strategic HR planning.
+## 🚀 Project Overview
 
-🎯 Business Problem
+The objective of this project is to help HR professionals identify workforce trends and factors influencing employee attrition through data-driven insights.
 
-Employee attrition directly impacts organizational productivity, recruitment costs, and employee morale. HR departments often struggle to identify the primary reasons employees leave due to scattered and unorganized data.
+The dashboard consolidates employee information into a single interactive report, enabling users to monitor KPIs, explore workforce demographics, analyze departmental performance, and support strategic HR decision-making.
 
-This dashboard addresses that challenge by providing:
+---
 
-Real-time HR performance monitoring
-Employee attrition analysis
-Workforce demographic insights
-Salary and compensation trends
-Department performance comparison
-Data-driven HR decision support
-📷 Dashboard Preview
+## 📷 Dashboard Preview
 
-Insert your dashboard screenshot here
+> Replace this image with your dashboard screenshot.
 
-Example:
+<p align="center">
+<img src="images/dashboard.png" width="900">
+</p>
 
-images/dashboard.png
-🛠 Tools & Technologies
-Microsoft Power BI
-Microsoft Excel
-Power Query
-DAX (Data Analysis Expressions)
-Data Modeling
-Data Visualization
-Business Intelligence
-📂 Dataset
+---
 
-The dataset contains HR employee records including:
+## 🛠 Tech Stack
 
-Employee ID
-Age
-Gender
-Department
-Job Role
-Monthly Income
-Education
-Marital Status
-Job Satisfaction
-Years at Company
-Attrition Status
-Overtime
-Business Travel
-Performance Rating
-📌 Key Performance Indicators (KPIs)
+| Tool | Purpose |
+|------|---------|
+| Power BI | Dashboard Development |
+| Power Query | Data Cleaning & Transformation |
+| DAX | KPI Calculations & Measures |
+| Microsoft Excel | Source Dataset |
+| Data Modeling | Table Relationships |
+| Power BI Visualizations | Interactive Reporting |
 
-The dashboard tracks several important HR metrics:
+---
 
-👥 Total Employees
-📉 Employee Attrition Rate
-✅ Active Employees
-💰 Average Monthly Salary
-🎂 Average Employee Age
-⏳ Average Years at Company
-📊 Attrition Count
-📈 Retention Percentage
-📊 Dashboard Features
-Employee Overview
-Total workforce
-Active employees
-Attrition count
-Average employee age
-Salary overview
-Attrition Analysis
+## 📂 Dataset
 
-Analyze employee attrition based on:
+The dashboard is built using an HR employee dataset containing over **1,400 employee records** with information including:
 
-Department
-Job Role
-Gender
-Age Group
-Education Field
-Marital Status
-Overtime
-Business Travel
-Salary Analysis
-Average monthly income
-Salary distribution
-Salary comparison by department
-Salary comparison by job role
-Workforce Demographics
-Gender distribution
-Age distribution
-Education background
-Marital status
-Department-wise employee count
-Job Satisfaction Analysis
+- Employee Demographics
+- Department
+- Job Role
+- Monthly Income
+- Education
+- Job Satisfaction
+- Performance Rating
+- Years at Company
+- Attrition Status
+- Overtime
+- Business Travel
 
-Compare employee satisfaction across:
+---
 
-Departments
-Job Roles
-Education Levels
-Attrition Status
-Department Performance
+# Dashboard Pages
 
-Evaluate each department using:
+### Executive Summary
 
-Employee Count
-Attrition Rate
-Average Salary
-Average Age
-Job Satisfaction
-Interactive Dashboard
+Provides a high-level overview of workforce performance through KPI cards and key business metrics.
 
-The dashboard includes interactive slicers allowing users to filter by:
+### Employee Demographics
 
-Department
-Gender
-Education
-Job Role
-Attrition
-Age Group
+Analyzes workforce distribution by:
 
-All visuals update dynamically based on selected filters.
+- Gender
+- Age
+- Education
+- Marital Status
+- Department
 
-📈 Insights Generated
+### Attrition Analysis
 
-Some key business insights include:
+Identifies patterns in employee turnover across:
 
-Departments with the highest employee attrition
-Job roles experiencing maximum turnover
-Relationship between salary and employee attrition
-Impact of overtime on employee retention
-Education fields with higher attrition rates
-Workforce age distribution
-Gender diversity across departments
-Employee satisfaction trends
-📚 Data Preparation
+- Departments
+- Job Roles
+- Age Groups
+- Salary Bands
+- Education Fields
+- Overtime
+- Business Travel
 
-The project involved several preprocessing steps:
+### Compensation Analysis
 
-Removed duplicate records
-Handled missing values
-Standardized data formats
-Created calculated columns
-Developed DAX measures
-Built relationships between tables
-Optimized data model for performance
-📐 DAX Measures Used
+Provides insights into:
 
-Examples include:
+- Average Salary
+- Salary Distribution
+- Salary by Department
+- Salary by Job Role
 
-Total Employees = COUNT(Employee[EmployeeID])
+### Employee Satisfaction
 
-Active Employees =
-CALCULATE(
-    COUNT(Employee[EmployeeID]),
-    Employee[Attrition] = "No"
-)
+Evaluates:
+
+- Job Satisfaction
+- Work-Life Balance
+- Attrition vs Satisfaction
+- Department Comparison
+
+---
+
+## 📈 Key Performance Indicators
+
+| KPI |
+|-----|
+| Total Employees |
+| Active Employees |
+| Attrition Count |
+| Attrition Rate |
+| Average Salary |
+| Average Age |
+| Average Years at Company |
+
+---
+
+## ✨ Dashboard Features
+
+- Interactive slicers
+- Cross-filtering visuals
+- Department-wise analysis
+- Employee demographics
+- Salary distribution
+- Attrition analysis
+- Job satisfaction insights
+- Education field analysis
+- Dynamic KPI cards
+- Responsive dashboard layout
+
+---
+
+## 📊 Business Insights
+
+The dashboard helps answer questions such as:
+
+- Which departments experience the highest attrition?
+- Which job roles have the greatest employee turnover?
+- Does overtime increase attrition?
+- How does salary relate to employee retention?
+- Which education fields show higher attrition rates?
+- What is the age distribution of employees leaving the company?
+- Which departments have the highest average salary?
+
+---
+
+## ⚙ Data Preparation
+
+The dataset was processed using **Power Query**, including:
+
+- Removing duplicates
+- Handling missing values
+- Data type corrections
+- Column standardization
+- Feature engineering
+- Data modeling
+- Relationship creation
+
+---
+
+## 📐 DAX Measures
+
+Examples of measures created for the dashboard include:
+
+```DAX
+Total Employees =
+COUNT(Employee[EmployeeID])
 
 Attrition Count =
 CALCULATE(
@@ -166,10 +173,73 @@ CALCULATE(
 )
 
 Attrition Rate =
-DIVIDE([Attrition Count],[Total Employees],0)
+DIVIDE(
+    [Attrition Count],
+    [Total Employees]
+)
 
 Average Salary =
 AVERAGE(Employee[MonthlyIncome])
 
 Average Age =
 AVERAGE(Employee[Age])
+```
+
+---
+
+## 📁 Repository Structure
+
+```
+HR-Analytics-Dashboard
+│
+├── Dashboard.pbix
+├── Dataset.xlsx
+├── README.md
+│
+├── images
+│   └── dashboard.png
+│
+└── assets
+```
+
+---
+
+## 🎯 Skills Demonstrated
+
+- Business Intelligence
+- Power BI
+- Dashboard Development
+- Data Modeling
+- Power Query
+- DAX
+- Data Cleaning
+- Data Visualization
+- KPI Design
+- HR Analytics
+- Analytical Thinking
+
+---
+
+## 🔮 Future Improvements
+
+- Predictive Attrition Analysis
+- Power BI Service Deployment
+- Automated Data Refresh
+- Drill-through Employee Profiles
+- Row-Level Security (RLS)
+- Mobile Dashboard Optimization
+
+---
+
+Aspiring Business Analyst | Data Analyst
+
+- Power BI
+- SQL
+- Excel
+- DAX
+- Power Query
+- Business Intelligence
+
+---
+
+⭐ If you found this project helpful, consider giving the repository a star.
