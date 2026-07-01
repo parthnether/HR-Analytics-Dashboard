@@ -14,7 +14,7 @@ The dashboard consolidates employee information into a single interactive report
 
 ## 📷 Dashboard Preview
 
-![Dashboard](dashboard.png)
+![Dashboard](Dashboard.png)
 
 ---
 
